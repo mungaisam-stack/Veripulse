@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeriPulse | News Verification Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="glass-container">
+        <header>
+            <div class="logo">V<span>P</span></div>
+            <h1>VeriPulse</h1>
+            <p>AI-Powered Event Verification</p>
+        </header>
+
+        <section class="search-section">
+            <textarea id="cityInput" placeholder="Enter a topic (e.g., Tech)..."></textarea>
+            
+            <div class="control-row">
+                <select id="dateFilter">
+                    <option value="today">Today</option>
+                    <option value="week">This Week</option>
+                    <option value="month">This Month</option>
+                </select>
+                <div class="button-group">
+                    <button id="findBtn" class="primary-btn">Verify</button>
+                    <button id="resetBtn" class="secondary-btn">Clear</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resultDisplay" class="results-area">
+            <div class="placeholder-text">
+                <p>Waiting for a topic to verify...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
