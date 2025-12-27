@@ -7,7 +7,7 @@ const dateFilter = document.getElementById("dateFilter");
 
 // 2. THE BRAIN: Fetching from GNews (Mobile Friendly)
 async function fetchNews(query) {
-    const apiKey = '03cdadec8eba2b88323130e75002e96a'; // <--- PASTE YOUR GNEWS KEY HERE
+    const apiKey = 'c3cc2121852acc00fcde0ae590bb51cf'; // <--- PASTE YOUR GNEWS KEY HERE
     
     // We'll use the query and the filter settings
     const url = `https://gnews.io/api/v4/search?q=${query}&lang=en&max=5&apikey=${apiKey}`;
